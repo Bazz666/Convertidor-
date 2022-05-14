@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Sige Report</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.2/xlsx.full.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+        crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/146ca533d2.js" crossorigin="anonymous"></script>
+        <link href="stylesheets/style.css" rel="stylesheet">
+    </head>
+
+    <body class="dark">
+    
+        <div class="container py-4">
+            <h1 class="h1 text-center" id="pageHeaderTitle">Reporte Sige Santillana</h1>
+    
+            <article class="postcard dark blue">
+                <a class="postcard__img_link" href="#">
+                    <img class="postcard__img" src="images/Transform Excel.png" alt="Image Title" />
+                </a>
+                <div class="postcard__text">
+                    <h1 class=" "><a href="#">Procesador de Reporte</a></h1>
+                    <div class="postcard__subtitle small">
+                        
+                    </div>
+                    <div class="postcard__bar"></div>
+                    <div class="postcard__preview-txt">Por favor ingrese su archivo en formato excel (XLSX) para Primaria,Básica y Media para iniciar la transformacion del archivo :)</div>
+                    <ul class="postcard__tagbox">
+                        <li class="tag__item"> <input class="form-control" type="file" id="input" accept=".xls,.xlsx"  ></li>
+                        
+                        <li class="tag__item play blue">
+                            <a href="#"><i class="fas fa-retweet"></i><button class="btn text-white" id="button">Convert</button></a>
+                        </li>
+                        
+                        <li class="tag__item play blue ">
+                            <a href="#"><i class="fas fa-file-export"></i><button class="btn text-white" id="button2">download</button></a>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            <div class="col-md-12 postcard__preview-txt">
+                <pre  class="postcard__preview-txt" id="jsondata"></pre>
+            </div>
+    
+            <!-- asddd -->
+
+            <!-- <div class="container">
+                <div class="section">
+                    <button class="btn" id="button3">JSON</button>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>example</th>
+
+                            </tr>
+                        </thead>
+                        <tbody id="res">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div> -->
+            <script src="excel.js"></script>
+        </div>
+        
+    </body>
+</html>
