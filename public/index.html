@@ -6,7 +6,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Sige Report</title>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.2/xlsx.full.min.js"></script>
+        <!-- use the latest version -->
+        <script lang="javascript" src="https://cdn.sheetjs.com/xlsx-latest/package/dist/xlsx.full.min.js"></script>
+        
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
         crossorigin="anonymous">
         <script src="https://kit.fontawesome.com/146ca533d2.js" crossorigin="anonymous"></script>
@@ -42,8 +44,27 @@
                     </ul>
                 </div>
             </article>
-            <div class="col-md-12 postcard__preview-txt">
-                <pre  class="postcard__preview-txt" id="jsondata"></pre>
+            
+            <div class="col-md-12 postcard__preview-txt" id="button">
+                <table class="table container-fluid table-striped table-dark">
+                    <thead>
+                        <tr>
+                        <th scope="col">Nivel</th>
+                        <th scope="col">Grado</th>
+                        <th scope="col">Grupo</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Apellido Paterno</th>
+                        <th scope="col">Apellido Materno</th>
+                        <th scope="col">Genero</th>
+                        <th scope="col">Fecha de Nacimiento</th>
+                        <th scope="col">Login</th>
+                        <th scope="col">Password</th>
+                        </tr>
+                    </thead>
+                    <tbody id = "res">
+
+                    </tbody>
+                </table>
             </div>
     
             <!-- asddd -->
@@ -64,6 +85,9 @@
                     </table>
                 </div>
             </div> -->
+
+            
+
             <script src="excel.js"></script>
         </div>
         
