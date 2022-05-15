@@ -8,6 +8,7 @@ body {
     font-weight: initial;
 }
 
+
 .dark {
     background: #110f16;
 }
@@ -199,16 +200,16 @@ a:hover {
 }
 /* COLORS */
 .postcard .postcard__tagbox .green.play:hover {
-  background: #79dd09;
+  background: #2a7914;
   color: black;
 }
 
 .green .postcard__title:hover {
-  color: #79dd09;
+  color: #2a7914;
 }
 
 .green .postcard__bar {
-  background-color: #79dd09;
+  background-color: #2a7914;
 }
 
 .green::before {
