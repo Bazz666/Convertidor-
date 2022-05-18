@@ -29,9 +29,9 @@ app.set('view engine', 'html');
 
 
 app.use(express.static('public'));
-app.get('/', function(req, res) {
-  res.sendFile(__dirname,'/public/index.html');
-});
+// app.get('/', function(req, res) {
+//   res.sendFile(__dirname,'/public/index.html');
+// });
 
 
 // catch 404 and forward to error handler
