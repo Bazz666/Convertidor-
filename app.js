@@ -3,7 +3,8 @@
 var createError = require('http-errors');
 var express = require('express');
 var app = express();
-var path = require('path');
+const http = require('http');
+
 
 
 
@@ -28,15 +29,13 @@ app.engine('html', engines.mustache);
 app.set('view engine', 'html');
 
 // app.listen(3000, () => console.log("Your app listening on port 3000"));
-// app.listen(process.env.PORT || 5000)
-const PORT = process.env.PORT || 3000                                                   
-   app.listen(                                                                                 
-    PORT,                                                                                                    
-    '0.0.0.0',                                                                                
-    function () {                                                                                                             
-    console.log("Server started.......");                                                              
-    }                                                                                                                   
-  );
+
+// Settings
+app.set('port', 8080);
+// START THE SERVER
+app.listen(app.get('port'), () => {
+  console.log(`[SUCCESS]: Servidor iniciado en el [PORT] => ${app.get('port')}.`);
+});
 // app.use(express.static('public'));
 // app.get('/', function(req, res) {
 //   res.sendFile(__dirname,'/public/index.html');
