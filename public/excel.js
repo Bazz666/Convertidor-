@@ -145,7 +145,7 @@ document.getElementById("button").addEventListener("click", () => {
 
             var wb = XLSX.utils.book_new();
             XLSX.utils.book_append_sheet(wb, ws, "Plantilla alta de alumnos");
-            XLSX.writeFile(wb, "Colegio_RBD_"+rbds[0]+ ".xlsx");
+            XLSX.writeFile(wb, "RBD_"+rbds[0]+ ".xlsx");
         });
 
         document.getElementById("button").addEventListener("click", traerDatos);

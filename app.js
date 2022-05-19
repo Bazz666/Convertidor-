@@ -27,8 +27,8 @@ var engines = require('consolidate');
 app.engine('html', engines.mustache);
 app.set('view engine', 'html');
 
-app.listen(3000, () => console.log("Your app listening on port 3000"));
-
+// app.listen(3000, () => console.log("Your app listening on port 3000"));
+app.listen(process.env.PORT || 5000)
 // app.use(express.static('public'));
 // app.get('/', function(req, res) {
 //   res.sendFile(__dirname,'/public/index.html');
