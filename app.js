@@ -28,7 +28,15 @@ app.engine('html', engines.mustache);
 app.set('view engine', 'html');
 
 // app.listen(3000, () => console.log("Your app listening on port 3000"));
-app.listen(process.env.PORT || 5000)
+// app.listen(process.env.PORT || 5000)
+const PORT = process.env.PORT || 3000                                                   
+   app.listen(                                                                                 
+    PORT,                                                                                                    
+    '0.0.0.0',                                                                                
+    function () {                                                                                                             
+    console.log("Server started.......");                                                              
+    }                                                                                                                   
+  );
 // app.use(express.static('public'));
 // app.get('/', function(req, res) {
 //   res.sendFile(__dirname,'/public/index.html');
