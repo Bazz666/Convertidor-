@@ -7,12 +7,10 @@
     "start": "node src/app.js",
     "web": "node src/app.js",
     "worker": "node src/app.js"
-
   },
   "dependencies": {
     "body-parser": "^1.18.3",
-    "express": "~4.16.1",
-    "express-handlebars": "latest",
+    "express": "~4.17.3",
     "morgan": "~1.9.1",
     "ejs": "^3.1.6",
     "mysql": "^2.18.1",
