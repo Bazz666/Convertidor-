@@ -4,7 +4,10 @@
   "private": true,
   "main": "app.js",
   "scripts": {
-    "start": "node src/app.js"
+    "start": "node src/app.js",
+    "web": "node src/app.js",
+    "worker": "node src/app.js"
+
   },
   "dependencies": {
     "body-parser": "^1.18.3",
