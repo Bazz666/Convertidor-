@@ -23,7 +23,7 @@ const logger = require('morgan');
 app.use(logger('dev'));
 
 //Routes
-app.use(require("./routes"));
+app.use(require("./src/routes"));
 // static files
 app.use(express.static(path.join(__dirname, "public")));
 

@@ -4,9 +4,9 @@
   "private": true,
   "main": "app.js",
   "scripts": {
-    "start": "node src/app.js",
-    "web": "node src/app.js",
-    "worker": "node src/app.js"
+    "start": "node app.js",
+    "web": "node app.js",
+    "worker": "node app.js"
   },
   "dependencies": {
     "body-parser": "^1.18.3",
