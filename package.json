@@ -1,12 +1,10 @@
 {
   "name": "testapp",
   "version": "1.0.0",
-  
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "web": "node app.js",
-    "worker": "node app.js"
+    "web": "node app.js"
   },
   "dependencies": {
     "body-parser": "^1.18.3",
